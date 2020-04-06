@@ -1,4 +1,4 @@
-# learn_automation
+# challenge_1to50
 This is an example project to learn web automation with Selenium and Ruby. 
 The challenge was to play this game http://zzzscore.com/1to50/en which consists in touching the buttons in the grid from 1 to 50 as fast as possible. 
 
