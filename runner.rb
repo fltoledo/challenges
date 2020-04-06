@@ -57,5 +57,6 @@ element = driver.find_element(:css, '#result > div.resultContent > strong')
 time = element.text
 puts("Resolved in " + time)
 
+driver.save_screenshot("result.png")
 
 driver.quit
