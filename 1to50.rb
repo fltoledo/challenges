@@ -1,7 +1,8 @@
 require "selenium-webdriver" 
 
-
-driver = Selenium::WebDriver.for :chrome
+#options = Selenium::WebDriver::Chrome::Options.new
+#options.add_argument('--headless')
+driver = Selenium::WebDriver.for :chrome#, options: options
 driver.manage.timeouts.implicit_wait = 10 # seconds
 driver.navigate.to "http://zzzscore.com/1to50/en" 
 
