@@ -1,5 +1,4 @@
 require "selenium-webdriver" 
-require "./Util"
 
 #options = Selenium::WebDriver::Chrome::Options.new
 #options.add_argument('--headless')
@@ -13,8 +12,7 @@ driver.execute_script("window.scrollTo(0, 400)")
 
 $i = 1
 $max = 10
-$total=0
- 
+
 begin
   while $i <= $max  do
     $j = $i + 1
@@ -23,7 +21,6 @@ begin
         $k = $j + 1
         $max3 = 12
         while $k <= $max3  do
-          $total +=1
           puts("about to click: #$i, #$j, #$k - try number: #$total")
           element = driver.find_element(:name, 'card'+$i.to_s) 
           element.click 
